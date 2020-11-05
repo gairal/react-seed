@@ -1,1 +1,3 @@
-module.exports = require('@autofidev/eslint-config-autofi/.prettierrc.js');
+module.exports = {
+  singleQuote: true
+}
