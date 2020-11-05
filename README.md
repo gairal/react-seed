@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] hot reload
+- [ ] adding jest tests
 
 ---
 
@@ -42,17 +42,17 @@ git clone git@github.com:gairal/react-seed.git
 cd react-seed
 
 # install the dependencies
-npm i
+yarn
 
 # start the TypeScript watcher
-npm start
+yarn start
 ```
 
 ### Commands
 
-- `npm run build`: Production build generated into ./dist
-- `npm run clean`: Deletes build dir ./dist
-- `npm run dev`: launches a TypeScript watcher
-- `npm run lint`: lints the whole sources and tests with eslint
-- `npm test`: runs Jest
-- `npm start`: runs the project in production mode
+- `yarn run build`: Production build generated into ./dist
+- `yarn run clean`: Deletes build dir ./dist
+- `yarn run dev`: launches a TypeScript watcher
+- `yarn run lint`: lints the whole sources and tests with eslint
+- `yarn test`: runs Jest
+- `yarn start`: runs the project in production mode
