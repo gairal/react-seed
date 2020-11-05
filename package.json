@@ -1,0 +1,37 @@
+{
+  "name": "react-seed",
+  "version": "1.0.0",
+  "description": "React Shell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gairal/react-seed.git"
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "jest"
+  ],
+  "author": "@gairal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gairal/react-seed/issues"
+  },
+  "homepage": "https://github.com/gairal/react-seed#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2",
+    "tailwind": "^4.0.0",
+    "ts-jest": "^26.4.3",
+    "ts-loader": "^8.0.9",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  }
+}

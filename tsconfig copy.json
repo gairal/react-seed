@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"baseUrl": "./",
+		"declaration": true,
+		"esModuleInterop": true,
+		"lib": ["es2019"],
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"strict": true,
+		"strictNullChecks": false,
+		"noImplicitReturns": true,
+		"noStrictGenericChecks": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "./dist",
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"target": "es2017"
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["node_modules", "examples", "dist", "docs"]
+}
