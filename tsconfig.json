@@ -5,7 +5,10 @@
     "jsx": "react",
     "lib": ["ESNext", "DOM"],
     "module": "esnext",
+    "moduleResolution": "Node",
     "paths": {
+      "@app/*": ["./src/app/*"],
+      "@types": ["./src/app/types"],
       "@/*": ["./src/*"]
     },
     "outDir": "./dist/",

@@ -2,5 +2,17 @@
   "extends": "airbnb-typescript-prettier",
   "rules": {
     "import/prefer-default-export": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@app", "./src/app"],
+          ["@types", "./src/app/types"],
+          ["@", "./src"]
+        ],
+        "extensions": [".ts", ".tsx", ".json"]
+      }
+    }
   }
 }
