@@ -1,21 +1,27 @@
 import { useReducer } from 'react';
-
-import { State } from './types';
+import { CardStatus, State } from './types';
 
 enum ActionType {
   Initial = 'performInitialValidation',
-  AddTitle = 'add new title',
+  AddCard = 'add new card',
+  RemoveCard = 'remove card',
+  ChangeCardStatus = 'ChangeCardStatus',
 }
 
 type Action =
   | { type: ActionType.Initial }
-  | { type: ActionType.AddTitle; payload: { title: string } };
+  | { type: ActionType.AddCard; payload: { title: string } }
+  | { type: ActionType.RemoveCard; payload: { id: string } }
+  | {
+      type: ActionType.RemoveCard;
+      payload: { id: string; status: CardStatus };
+    };
 
 const reducer = (state: State, action: Action): State => {
   const newState: State = { ...state };
 
   switch (action.type) {
-    case ActionType.AddTitle:
+    case ActionType.AddCard:
       break;
     default:
   }
@@ -30,7 +36,24 @@ export const useApp = (): State => {
   const [state] = useReducer(
     reducer,
     createInitialState({
-      title: 'React Seed',
+      lanes: [
+        {
+          title: 'col1',
+          cards: [
+            { title: 'card1', status: CardStatus.Open },
+            { title: 'card2', status: CardStatus.Open },
+            { title: 'card3', status: CardStatus.Open },
+          ],
+        },
+        {
+          title: 'col2',
+          cards: [
+            { title: 'card1', status: CardStatus.Open },
+            { title: 'card2', status: CardStatus.Open },
+            { title: 'card3', status: CardStatus.Open },
+          ],
+        },
+      ],
     })
   );
 

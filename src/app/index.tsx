@@ -1,14 +1,16 @@
 import React, { FC } from 'react';
 
-import { Title } from './components/Title';
+import { Lane } from './components/Lane';
 import { useApp } from './useApp';
 
 export const App: FC = () => {
-  const { title } = useApp();
+  const { lanes } = useApp();
 
   return (
-    <div>
-      <Title>{title}</Title>
+    <div className="container wrapper">
+      {lanes.map(({ title, ...rest }) => (
+        <Lane key={title} title={title} {...rest} />
+      ))}
     </div>
   );
 };
