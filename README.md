@@ -8,7 +8,6 @@
 - [File structure](#file-structure)
 - [Quick Start](#quick-start)
 - [Commands](#commands)
-- [Creating a new Resource](#creating-a-new-resource)
 
 ### File structure
 
