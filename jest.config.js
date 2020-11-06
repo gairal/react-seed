@@ -9,9 +9,9 @@ module.exports = {
   moduleNameMapper: {
     '@/(.*)$': '<rootDir>/src/$1',
     '@app/(.*)': '<rootDir>/src/app/$1',
+    '@components/(.*)': '<rootDir>/src/app/components/$1',
     '@types': '<rootDir>/src/app/types',
-    '@mocks/(.*)$': '<rootDir>/test/__mocks__$1',
-    '@test/(.*)': '<rootDir>/test/$1',
+    '@tests/(.*)': '<rootDir>/__tests__/$1',
   },
   preset: 'ts-jest',
   verbose: false,

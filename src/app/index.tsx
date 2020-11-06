@@ -1,3 +1,5 @@
 import React, { FC } from 'react';
 
-export const App: FC = () => <div>APP</div>;
+// import { Title } from './components/Title';
+
+export const App: FC = () => <div>{/* <Title>React Seed</Title> */}</div>;

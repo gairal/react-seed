@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "esModuleInterop": true,
     "jsx": "react",
     "lib": ["ESNext", "DOM"],
@@ -8,8 +8,10 @@
     "moduleResolution": "Node",
     "paths": {
       "@app/*": ["./src/app/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@tests": ["./__tests__/*"],
       "@types": ["./src/app/types"],
-      "@/*": ["./src/*"]
+      "@": ["./src/*"]
     },
     "outDir": "./dist/",
     "sourceMap": true,
