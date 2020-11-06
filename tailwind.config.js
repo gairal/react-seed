@@ -3,10 +3,20 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        black: '#000',
+        white: '#fff',
+        gray: {
+          100: '#f7fafc',
+          900: '#1a202c',
+        },
+      },
+    },
   },
   variants: {},
   plugins: [],
-}
+};
