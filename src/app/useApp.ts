@@ -32,7 +32,7 @@ const reducer = (state: State, action: Action): State => {
 const createInitialState = (defaultState: Partial<State> = {}) =>
   reducer(defaultState as State, { type: ActionType.Initial });
 
-export const useTasks = (): State => {
+export const useApp = (): State => {
   const [state] = useReducer(
     reducer,
     createInitialState({

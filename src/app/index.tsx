@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 
 import { Lane } from './components/Lane';
-import { useTasks } from './useTasks';
+import { useApp } from './useApp';
 
 export const App: FC = () => {
-  const { lanes } = useTasks();
+  const { lanes } = useApp();
 
   return (
     <div className="container wrapper">
