@@ -3,7 +3,9 @@
 exports[`App matches snapshot 1`] = `
 <DocumentFragment>
   <div>
-    APP
+    <h2>
+      React Seed
+    </h2>
   </div>
 </DocumentFragment>
 `;
