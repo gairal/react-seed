@@ -1,9 +1,16 @@
 import React, { FC } from 'react';
 
-import { Title } from './components/Title';
+import { Lane } from './components/Lane';
+import { useTasks } from './useTasks';
 
-export const App: FC = () => (
-  <div>
-    <Title>React Seed</Title>
-  </div>
-);
+export const App: FC = () => {
+  const { lanes } = useTasks();
+
+  return (
+    <div className="container wrapper">
+      {lanes.map(({ title, ...rest }) => (
+        <Lane key={title} title={title} {...rest} />
+      ))}
+    </div>
+  );
+};
