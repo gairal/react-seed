@@ -1,13 +1,5 @@
 # react-seed
 
----
-
-## TODO
-
-- [ ] adding jest tests
-
----
-
 > A React Seed [TypeScript](https://www.typescriptlang.org/),
 > [Jest](https://jestjs.io/), [Prettier](https://prettier.io/), [eslint](https://eslint.org/) and ❤️
 
