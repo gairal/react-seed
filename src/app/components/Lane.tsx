@@ -7,7 +7,7 @@ export const Lane: FC<LaneType> = ({ cards, title }) => (
     <h2 className="text-3xl header">{title}</h2>
     <ul className="content">
       {cards.map((props) => (
-        <Card {...props} />
+        <Card key={props.title} {...props} />
       ))}
     </ul>
   </div>
