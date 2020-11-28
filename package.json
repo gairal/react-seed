@@ -5,7 +5,6 @@
   "main": "dist/index.html",
   "scripts": {
     "build": "yarn run clean && NODE_ENV=production parcel build src/index.html --no-source-maps --detailed-report",
-    "ci": "yarn run lint && yarn run build && yarn test",
     "clean": "rimraf ./dist",
     "dev": "NODE_ENV=development parcel src/index.html",
     "lint": "eslint ./src/**/*.{ts,tsx}",
