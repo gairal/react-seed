@@ -30,7 +30,24 @@ export const useApp = (): State => {
   const [state] = useReducer(
     reducer,
     createInitialState({
-      title: 'React Seed',
+      lanes: [
+        {
+          id: 'DEF&%',
+          title: 'lane 1',
+          tasks: [
+            { id: 'ABNC', title: 'task 1' },
+            { id: '1234', title: 'task 1' },
+          ],
+        },
+        {
+          id: 'DEFwdfwe',
+          title: 'lane2',
+          tasks: [
+            { id: 'ABNC', title: 'task 1' },
+            { id: '1234', title: 'task 1' },
+          ],
+        },
+      ],
     })
   );
 
