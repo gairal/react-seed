@@ -1,4 +1,4 @@
-# react-seed &middot; [![CI Status](https://github.com/gairal/react-seed/workflows/CI/badge.svg)
+# react-seed &middot; [![CI Status](https://github.com/gairal/react-seed/workflows/CI/badge.svg)](https://github.com/gairal/react-seed/actions)
 
 > A React Seed [TypeScript](https://www.typescriptlang.org/),
 > [Jest](https://jestjs.io/), [Prettier](https://prettier.io/), [eslint](https://eslint.org/) and ❤️
