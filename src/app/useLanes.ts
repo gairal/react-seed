@@ -1,7 +1,16 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { Lane } from './types';
+export interface Task {
+  id: string;
+  title: string;
+}
+
+export interface Lane {
+  id: string;
+  title: string;
+  tasks: Task[];
+}
 
 const getLaneById = (lanes: Lane[], laneId: string) =>
   lanes.find(({ id }) => id === laneId);

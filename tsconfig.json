@@ -10,7 +10,6 @@
       "@app/*": ["./src/app/*"],
       "@components/*": ["./src/app/components/*"],
       "@tests": ["./__tests__/*"],
-      "@types": ["./src/app/types"],
       "@": ["./src/*"]
     },
     "outDir": "./dist/",

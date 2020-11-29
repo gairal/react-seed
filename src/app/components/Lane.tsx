@@ -1,5 +1,6 @@
-import { Lane } from '@app/types';
 import React, { ChangeEvent, useState } from 'react';
+
+import { Lane } from '@app/useLanes';
 import { TaskComponent } from './Task';
 
 interface Props extends Lane {

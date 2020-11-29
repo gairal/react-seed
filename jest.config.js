@@ -10,7 +10,6 @@ module.exports = {
     '@/(.*)$': '<rootDir>/src/$1',
     '@app/(.*)': '<rootDir>/src/app/$1',
     '@components/(.*)': '<rootDir>/src/app/components/$1',
-    '@types': '<rootDir>/src/app/types',
     '@tests/(.*)': '<rootDir>/__tests__/$1',
   },
   preset: 'ts-jest',
