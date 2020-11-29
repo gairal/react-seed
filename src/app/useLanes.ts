@@ -1,16 +1,6 @@
 import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-
-export interface Task {
-  id: string;
-  title: string;
-}
-
-export interface Lane {
-  id: string;
-  title: string;
-  tasks: Task[];
-}
+import { v4 as uuid } from 'uuid';
+import { Lane } from './components/Lane';
 
 const getLaneById = (lanes: Lane[], laneId: string) =>
   lanes.find(({ id }) => id === laneId);
@@ -37,7 +27,7 @@ export const useLanes = () => {
     setLanes((currLanes) => {
       const lane = getLaneById(currLanes, laneId);
       if (lane) {
-        lane.tasks.push({ ...task, id: uuidv4() });
+        lane.tasks.push({ ...task, id: uuid() });
       }
 
       return currLanes;

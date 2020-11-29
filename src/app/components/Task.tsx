@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Task } from '@app/useLanes';
+export interface Task {
+  id: string;
+  title: string;
+}
 
 interface Props extends Task {
   onRemoveTask: (taskId: string) => void;

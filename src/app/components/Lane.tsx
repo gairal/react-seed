@@ -1,7 +1,12 @@
 import React, { ChangeEvent, useState } from 'react';
 
-import { Lane } from '@app/useLanes';
-import { TaskComponent } from './Task';
+import { TaskComponent, Task } from './Task';
+
+export interface Lane {
+  id: string;
+  title: string;
+  tasks: Task[];
+}
 
 interface Props extends Lane {
   onAddTask: (laneId: string, task: { title: string }) => void;
