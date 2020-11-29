@@ -8,6 +8,7 @@ import { MainState } from './types';
 enum ActionType {
   Initial = 'perform initial validation',
   AddTask = 'add a task to a lane',
+  RemoveTask = 'rm a task to a lane',
 }
 
 const reducer = (
@@ -31,6 +32,19 @@ const reducer = (
 
       break;
     }
+    case ActionType.RemoveTask: {
+      const lane = newState.lanes.find(
+        ({ id }) => id === action.payload.laneId
+      );
+
+      if (lane) {
+        lane.tasks = lane.tasks.filter(
+          ({ id }) => id !== action.payload.taskId
+        );
+      }
+
+      break;
+    }
     default:
   }
 
@@ -44,5 +58,9 @@ export const useApp = () => {
     dispatch({ type: ActionType.AddTask, payload: { laneId, ...task } });
   };
 
-  return { addTask, state };
+  const removeTask = (laneId: string, taskId: string) => {
+    dispatch({ type: ActionType.RemoveTask, payload: { laneId, taskId } });
+  };
+
+  return { addTask, removeTask, state };
 };

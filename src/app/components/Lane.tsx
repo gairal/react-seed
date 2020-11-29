@@ -4,9 +4,16 @@ import { TaskComponent } from './Task';
 
 interface Props extends Lane {
   onAddTask: (laneId: string, task: { title: string }) => void;
+  onRemoveTask: (laneId: string, taskId: string) => void;
 }
 
-export const LaneComponent = ({ id, onAddTask, title, tasks }: Props) => {
+export const LaneComponent = ({
+  id,
+  onAddTask,
+  onRemoveTask,
+  title,
+  tasks,
+}: Props) => {
   const [taskTitle, setTaskTitle] = useState('');
 
   const handleChange = ({ currentTarget }: ChangeEvent<HTMLInputElement>) => {
@@ -17,6 +24,8 @@ export const LaneComponent = ({ id, onAddTask, title, tasks }: Props) => {
     setTaskTitle('');
     onAddTask(id, { title: taskTitle });
   };
+
+  const handleRemoveTask = (taskId: string) => onRemoveTask(id, taskId);
 
   return (
     <div className="lane">
@@ -38,7 +47,11 @@ export const LaneComponent = ({ id, onAddTask, title, tasks }: Props) => {
         </button>
       </div>
       {tasks.map((task) => (
-        <TaskComponent key={task.id} {...task} />
+        <TaskComponent
+          key={task.id}
+          {...task}
+          onRemoveTask={handleRemoveTask}
+        />
       ))}
     </div>
   );

@@ -7,6 +7,7 @@ import { useApp } from './useApp';
 export const App: FC = () => {
   const {
     addTask,
+    removeTask,
     state: { lanes },
   } = useApp();
 
@@ -15,7 +16,12 @@ export const App: FC = () => {
       <Title>React Seed</Title>
       <main className="main">
         {lanes.map((lane) => (
-          <LaneComponent key={lane.id} {...lane} onAddTask={addTask} />
+          <LaneComponent
+            key={lane.id}
+            {...lane}
+            onAddTask={addTask}
+            onRemoveTask={removeTask}
+          />
         ))}
       </main>
     </>
