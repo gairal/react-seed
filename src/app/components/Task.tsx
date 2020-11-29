@@ -1,3 +1,8 @@
+import { Task } from '@app/types';
 import React from 'react';
 
-export const TaskComponent = ({title}) => <div>task</div>;
+interface Props extends Task {}
+
+export const TaskComponent = ({ title }: Props) => (
+  <div className="task">{title}</div>
+);

@@ -5,7 +5,7 @@ import { MainState } from './types';
 
 enum ActionType {
   Initial = 'perform initial validation',
-  ChangeTitle = 'change app title',
+  AddTask = 'add a task to a lane',
 }
 
 const reducer = (
@@ -18,9 +18,17 @@ const reducer = (
   const newState = { ...state };
 
   switch (action.type) {
-    case ActionType.ChangeTitle:
-      newState.title = action.payload.title;
+    case ActionType.AddTask: {
+      const lane = newState.lanes.find(
+        ({ id }) => id === action.payload.laneId
+      );
+
+      if (lane) {
+        lane.tasks.push({ title: action.payload.title, id: 'test' });
+      }
+
       break;
+    }
     default:
   }
 
@@ -30,9 +38,9 @@ const reducer = (
 export const useApp = () => {
   const [state, dispatch] = useReducer(reducer, DEFAULT_STATE);
 
-  const changeTitle = (newTitle: string) => {
-    dispatch({ type: ActionType.ChangeTitle, payload: { title: newTitle } });
+  const addTask = (laneId: string, task: { title: string }) => {
+    dispatch({ type: ActionType.AddTask, payload: { laneId, ...task } });
   };
 
-  return { changeTitle, state };
+  return { addTask, state };
 };
