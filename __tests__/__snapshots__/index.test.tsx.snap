@@ -2,10 +2,13 @@
 
 exports[`App matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    <h2>
-      React Seed
-    </h2>
-  </div>
+  <h1
+    class="text-3xl p-2"
+  >
+    React Seed
+  </h1>
+  <hr
+    class="border"
+  />
 </DocumentFragment>
 `;
