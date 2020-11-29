@@ -2,14 +2,10 @@ import React, { FC } from 'react';
 import { LaneComponent } from './components/Lane';
 
 import { Title } from './components/Title';
-import { useApp } from './useApp';
+import { useLanes } from './useLanes';
 
 export const App: FC = () => {
-  const {
-    addTask,
-    removeTask,
-    state: { lanes },
-  } = useApp();
+  const { addTask, removeTask, lanes } = useLanes();
 
   return (
     <>
