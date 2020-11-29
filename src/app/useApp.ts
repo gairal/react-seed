@@ -1,21 +1,25 @@
 import { useReducer } from 'react';
+import { DEFAULT_STATE } from './constants';
 
-import { State } from './types';
+import { MainState } from './types';
 
 enum ActionType {
-  Initial = 'performInitialValidation',
-  AddTitle = 'add new title',
+  Initial = 'perform initial validation',
+  ChangeTitle = 'change app title',
 }
 
-type Action =
-  | { type: ActionType.Initial }
-  | { type: ActionType.AddTitle; payload: { title: string } };
-
-const reducer = (state: State, action: Action): State => {
-  const newState: State = { ...state };
+const reducer = (
+  state: MainState,
+  action: {
+    type: ActionType;
+    payload: Record<string, any>;
+  }
+): MainState => {
+  const newState = { ...state };
 
   switch (action.type) {
-    case ActionType.AddTitle:
+    case ActionType.ChangeTitle:
+      newState.title = action.payload.title;
       break;
     default:
   }
@@ -23,16 +27,12 @@ const reducer = (state: State, action: Action): State => {
   return newState;
 };
 
-const createInitialState = (defaultState: Partial<State> = {}) =>
-  reducer(defaultState as State, { type: ActionType.Initial });
+export const useApp = () => {
+  const [state, dispatch] = useReducer(reducer, DEFAULT_STATE);
 
-export const useApp = (): State => {
-  const [state] = useReducer(
-    reducer,
-    createInitialState({
-      title: 'React Seed',
-    })
-  );
+  const changeTitle = (newTitle: string) => {
+    dispatch({ type: ActionType.ChangeTitle, payload: { title: newTitle } });
+  };
 
-  return state;
+  return { changeTitle, state };
 };

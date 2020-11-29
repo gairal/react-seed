@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 
 import { Title } from './components/Title';
-import { useApp } from './useApp';
+// import { useApp } from './useApp';
 
 export const App: FC = () => {
-  const { title } = useApp();
+  // const { state, changeTitle } = useApp();
 
   return (
-    <div>
-      <Title>{title}</Title>
-    </div>
+    <main className="p-4">
+      <Title>React Seed</Title>
+    </main>
   );
 };
