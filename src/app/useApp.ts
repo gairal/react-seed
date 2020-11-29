@@ -1,4 +1,6 @@
 import { useReducer } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 import { DEFAULT_STATE } from './constants';
 
 import { MainState } from './types';
@@ -24,7 +26,7 @@ const reducer = (
       );
 
       if (lane) {
-        lane.tasks.push({ title: action.payload.title, id: 'test' });
+        lane.tasks.push({ title: action.payload.title, id: uuidv4() });
       }
 
       break;
