@@ -1,24 +1,12 @@
-import React, { FC } from 'react';
-import { Column } from './Column';
+import React from 'react';
 
-import { Title } from './Title';
-import { useTrello } from './state/useTrelloState';
-import { TrelloContext } from './state/context';
-import './index.css';
+import { AppContextProvider } from './AppContextProvider';
+import { Header } from './Header';
+import { Main } from './Main';
 
-export const App: FC = () => {
-  const [data, context] = useTrello();
-
-  return (
-    <TrelloContext.Provider value={context}>
-      <header>
-        <Title>React Seed</Title>
-      </header>
-      <main className="main">
-        {data.map((col) => (
-          <Column {...col} />
-        ))}
-      </main>
-    </TrelloContext.Provider>
-  );
-};
+export const App = () => (
+  <AppContextProvider>
+    <Header>React Seed</Header>
+    <Main />
+  </AppContextProvider>
+);

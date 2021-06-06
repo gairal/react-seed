@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
 import { Col } from '../types';
-import { TrelloContextState } from './context';
+import { AppContextState } from './context';
 
-export const useTrello = (): [Col[], TrelloContextState] => {
+export const useInitAppContext = (): AppContextState => {
   const [cols] = useState<Col[]>([
     {
       id: uuid(),
@@ -67,7 +67,6 @@ export const useTrello = (): [Col[], TrelloContextState] => {
   const removeItem = (coldId: string, id: string) => {
     console.log(coldId, id);
   };
-  // const removeColumn = () => {};
 
-  return [cols, { addItem, removeItem }];
+  return { addItem, data: cols, removeItem };
 };

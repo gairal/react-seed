@@ -2,13 +2,157 @@
 
 exports[`App matches snapshot 1`] = `
 <DocumentFragment>
-  <h1
-    class="text-3xl p-2 title"
-  >
-    React Seed
-  </h1>
-  <hr
-    class="border"
-  />
+  <header>
+    <h1
+      class="text-3xl p-2"
+    >
+      React Seed
+    </h1>
+    <hr
+      class="border"
+    />
+  </header>
+  <main>
+    <section
+      class="column"
+    >
+      <header>
+        column1
+      </header>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items1
+        </div>
+      </div>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items2
+        </div>
+      </div>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items3
+        </div>
+      </div>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items4
+        </div>
+      </div>
+    </section>
+    <section
+      class="column"
+    >
+      <header>
+        column2
+      </header>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items1
+        </div>
+      </div>
+    </section>
+    <section
+      class="column"
+    >
+      <header>
+        column3
+      </header>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items1
+        </div>
+      </div>
+    </section>
+    <section
+      class="column"
+    >
+      <header>
+        column4
+      </header>
+      <div
+        class="cell"
+      >
+        <header
+          class="flex justify-end"
+        >
+          <button
+            type="button"
+          >
+            X
+          </button>
+        </header>
+        <div>
+          items1
+        </div>
+      </div>
+    </section>
+  </main>
 </DocumentFragment>
 `;
