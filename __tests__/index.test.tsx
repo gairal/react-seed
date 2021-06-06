@@ -1,13 +1,11 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import { App } from '@app/index';
 
+const subject = () => render(<App />);
+
 describe('App', () => {
-  afterEach(cleanup);
-
-  const subject = () => render(<App />);
-
   it('matches snapshot', () => {
     const { asFragment } = subject();
 

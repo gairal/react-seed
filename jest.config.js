@@ -13,5 +13,6 @@ module.exports = {
     '@tests/(.*)': '<rootDir>/__tests__/$1',
   },
   preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   verbose: false,
 };
