@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { AppContextProvider } from './AppContextProvider';
+import { AppContext } from './AppContext';
+import { useInitAppContext } from './AppContext/useInitAppContext';
 import { Header } from './Header';
 import { Main } from './Main';
 
 export const App = () => (
-  <AppContextProvider>
+  <AppContext.Provider value={useInitAppContext()}>
     <Header>React Seed</Header>
     <Main />
-  </AppContextProvider>
+  </AppContext.Provider>
 );

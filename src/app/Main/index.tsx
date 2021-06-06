@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useAppContext } from '../AppContextProvider/context';
+import { useAppContext } from '../AppContext';
 
 import './Main.scss';
 
