@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+@screen sm {
+  .main {
+    flex-direction: row;
+    margin: 0 -12.5px;
+  }
+}

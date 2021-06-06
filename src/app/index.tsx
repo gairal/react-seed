@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import { Column } from './Column';
 
 import { Title } from './Title';
-import { useTrello } from './useTrello';
-import { TrelloContext } from './context';
+import { useTrello } from './state/useTrelloState';
+import { TrelloContext } from './state/context';
 import './index.css';
 
 export const App: FC = () => {
