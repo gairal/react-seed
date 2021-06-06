@@ -9,13 +9,13 @@ exports[`App matches snapshot 1`] = `
       React Seed
     </h1>
     <hr
-      class="border"
+      class="border mb-4"
     />
   </header>
-  <main>
-    <p
-      class="content"
-    >
+  <main
+    class="main"
+  >
+    <p>
       context test
     </p>
   </main>
