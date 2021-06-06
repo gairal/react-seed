@@ -5,8 +5,9 @@ module.exports = {
   coverageReporters: ['html', 'text-summary'],
   errorOnDeprecated: true,
   logHeapUsage: true,
-  moduleFileExtensions: ['ts', 'tsx', 'json'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   moduleNameMapper: {
+    '\\.scss$': 'identity-obj-proxy',
     '@/(.*)$': '<rootDir>/src/$1',
     '@app/(.*)': '<rootDir>/src/app/$1',
     '@components/(.*)': '<rootDir>/src/app/components/$1',
