@@ -1,1 +1,9 @@
 /** example of a local scss file **/
+.main {
+  display: flex;
+  flex-direction: column;
+
+  @screen sm {
+    flex-direction: row;
+  }
+}

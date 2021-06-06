@@ -9,7 +9,7 @@ export const Main = () => {
   const { data } = useAppContext();
 
   return (
-    <main>
+    <main className="main">
       {data.map((col) => (
         <Column key={col.id} {...col} />
       ))}
