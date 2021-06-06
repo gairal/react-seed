@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { Title } from './components/Title';
+import { Title } from './Title';
 
 export const App: FC = () => {
   return (
