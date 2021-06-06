@@ -8,8 +8,8 @@ export const Main = () => {
   const { content } = useAppContext();
 
   return (
-    <main>
-      <p className="content">{content}</p>
+    <main className="main">
+      <p>{content}</p>
     </main>
   );
 };
