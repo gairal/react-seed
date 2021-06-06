@@ -8,7 +8,7 @@
     "clean": "rimraf ./dist",
     "dev": "NODE_ENV=development parcel src/index.html",
     "lint": "eslint ./src/**/*.{ts,tsx}",
-    "postinstall": "node ./node_modules/husky/lib/bin install",
+    "prepare": "husky install",
     "start": "yarn run dev",
     "test": "NODE_ENV=test jest"
   },

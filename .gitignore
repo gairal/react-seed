@@ -16,7 +16,6 @@ nbproject
 
 # Directory to ignore
 .cache/
-.husky/
 .parcel-cache/
 node_modules/
 coverage/
