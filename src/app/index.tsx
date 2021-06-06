@@ -1,12 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-import { Title } from './Title';
+import { AppContextProvider } from './AppContextProvider';
+import { Header } from './Header';
+import { Main } from './Main';
 
-export const App: FC = () => {
-  return (
-    <>
-      <Title>React Seed</Title>
-      <hr className="border" />
-    </>
-  );
-};
+export const App = () => (
+  <AppContextProvider>
+    <Header>React Seed</Header>
+    <Main />
+  </AppContextProvider>
+);
