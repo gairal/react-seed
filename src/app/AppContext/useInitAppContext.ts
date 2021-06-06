@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 
 import { Col } from '../types';
-import { AppContextState } from './context';
+import type { AppContextState } from './types';
 
 export const useInitAppContext = (): AppContextState => {
   const [cols] = useState<Col[]>([

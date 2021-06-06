@@ -50,7 +50,8 @@
     "no-only-tests/no-only-tests": 2,
     "react-hooks/exhaustive-deps": 1,
     "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
-    "react/jsx-indent-props": [1, "tab"],
+    "react/jsx-indent-props": [1, 2],
+    "react/jsx-key": 2,
     "react/jsx-props-no-spreading": 1,
     "react/jsx-sort-props": [2, { "reservedFirst": true }]
   },
