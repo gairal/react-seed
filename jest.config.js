@@ -5,7 +5,7 @@ module.exports = {
   coverageReporters: ['html', 'text-summary'],
   errorOnDeprecated: true,
   logHeapUsage: true,
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
+  moduleFileExtensions: ['ts', 'tsx', 'json'],
   moduleNameMapper: {
     '@/(.*)$': '<rootDir>/src/$1',
     '@app/(.*)': '<rootDir>/src/app/$1',
