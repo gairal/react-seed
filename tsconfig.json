@@ -6,12 +6,7 @@
     "lib": ["ESNext", "DOM"],
     "module": "esnext",
     "moduleResolution": "Node",
-    "paths": {
-      "@app/*": ["./src/app/*"],
-      "@components/*": ["./src/app/components/*"],
-      "@tests": ["./__tests__/*"],
-      "@": ["./src/*"]
-    },
+    "paths": { "~/*": ["./*"] },
     "outDir": "./dist/",
     "sourceMap": true,
     "strict": true,

@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-
-import { App } from '@app/index';
+import { App } from '../app';
 
 const subject = () => render(<App />);
 

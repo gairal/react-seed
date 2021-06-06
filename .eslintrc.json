@@ -9,12 +9,7 @@
   "settings": {
     "import/resolver": {
       "alias": {
-        "map": [
-          ["@app", "./src/app"],
-          ["@components", "./src/app/components"],
-          ["@tests", "./__tests__"],
-          ["@", "./src"]
-        ],
+        "map": [["~", "./src"]],
         "extensions": [".ts", ".tsx", ".json"]
       }
     }

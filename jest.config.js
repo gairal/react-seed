@@ -8,10 +8,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   moduleNameMapper: {
     '\\.scss$': 'identity-obj-proxy',
-    '@/(.*)$': '<rootDir>/src/$1',
-    '@app/(.*)': '<rootDir>/src/app/$1',
-    '@components/(.*)': '<rootDir>/src/app/components/$1',
-    '@tests/(.*)': '<rootDir>/__tests__/$1',
+    '~/(.*)$': '<rootDir>/src/$1',
   },
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
