@@ -1,0 +1,11 @@
+.column {
+  border: solid 1px black;
+  padding: 1rem;
+  margin: 12.5px 0;
+}
+
+@screen sm {
+  .column {
+    margin: 0 12.5px;
+  }
+}
