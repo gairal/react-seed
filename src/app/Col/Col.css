@@ -1,0 +1,20 @@
+.col {
+  border: solid gray 1px;
+  margin: 12.5px 0;
+  flex-grow: 1;
+}
+
+@screen md {
+  .col {
+    margin: 0 12.5px;
+  }
+}
+
+.col-header {
+  border-bottom: solid gray 1px;
+  padding: 0.5rem;
+}
+
+.col-content {
+  padding: 0.5rem;
+}

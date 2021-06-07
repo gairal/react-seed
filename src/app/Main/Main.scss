@@ -1,5 +1,14 @@
 /** example of a local scss file **/
 
 .main {
-  @apply text-blue-500;
+  display: flex;
+  flex-direction: column;
+  margin: -12.5px 0;
+}
+
+@screen md {
+  .main {
+    flex-direction: row;
+    margin: 0 -12.5px;
+  }
 }

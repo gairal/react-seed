@@ -1,0 +1,13 @@
+.cell {
+  border: solid blue 1px;
+  margin: 0.5rem 0;
+}
+
+.cell-header {
+  border-bottom: solid gray 1px;
+  padding: 0.5rem;
+}
+
+.cell-content {
+  padding: 0.5rem;
+}
