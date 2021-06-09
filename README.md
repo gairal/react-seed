@@ -12,7 +12,7 @@
 ### File structure
 
 ```markup
-vendor-api-client/
+react-seed/
  ├──dist/                            * generated library
  │
  ├──src/                             * source TypeScript Files
