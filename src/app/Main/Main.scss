@@ -1,5 +1,21 @@
 /** example of a local scss file **/
 
 .main {
-  @apply text-blue-500;
+  border: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+
+  & > :not(:first-child) {
+    margin-top: 25px;
+  }
+
+  @screen md {
+    flex-direction: row;
+
+    & > :not(:first-child) {
+      margin-top: 0;
+      margin-left: 25px;
+    }
+  }
 }

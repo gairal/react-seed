@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useAppContext } from '../AppContext';
+import { Column } from '../Column';
 
 import './Main.scss';
 
@@ -9,7 +10,9 @@ export const Main = () => {
 
   return (
     <main className="main">
-      <p>{content}</p>
+      {content.map((column) => (
+        <Column key={column.id} {...column} />
+      ))}
     </main>
   );
 };
