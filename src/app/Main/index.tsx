@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useAppContext } from '../AppContext';
 
-import './Main.scss';
+import './style.scss';
 
 export const Main = () => {
   const { content } = useAppContext();
