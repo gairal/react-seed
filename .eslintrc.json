@@ -35,14 +35,6 @@
           "external",
           ["internal", "parent", "sibling", "index"]
         ],
-        "pathGroups": [
-          {
-            "pattern": "@autofidev/**",
-            "group": "external",
-            "position": "after"
-          },
-          { "pattern": "~*/**", "group": "internal", "position": "before" }
-        ],
         "pathGroupsExcludedImportTypes": ["builtin"]
       }
     ],
