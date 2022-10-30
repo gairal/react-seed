@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useAppContext } from '../AppContext';
 
 import './style.scss';
