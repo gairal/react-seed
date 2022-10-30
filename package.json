@@ -4,11 +4,12 @@
   "description": "React Seed",
   "main": "dist/index.html",
   "scripts": {
-    "build": "yarn run clean && NODE_ENV=production parcel build index.html --no-source-maps --detailed-report",
+    "build": "tsc && vite build",
     "clean": "rimraf ./dist",
-    "dev": "NODE_ENV=development parcel index.html",
+    "dev": "vite",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "prepare": "husky install",
+    "preview": "vite preview",
     "start": "yarn run dev",
     "test": "NODE_ENV=test jest"
   },
