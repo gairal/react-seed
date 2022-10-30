@@ -22,6 +22,10 @@
       { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }
     ],
     "import/no-default-export": 2,
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["vite.config.ts"] }
+    ],
     "import/no-unresolved": [
       2,
       { "commonjs": true, "amd": true, "caseSensitive": true }
