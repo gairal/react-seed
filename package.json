@@ -29,14 +29,14 @@
   },
   "homepage": "https://github.com/gairal/react-seed#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
+    "@testing-library/jest-dom": "^5.0.0",
     "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^14.0.0",
     "@types/jest": "^29.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@types/uuid": "^8.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vitejs/plugin-react": "^2.0.0",
     "autoprefixer": "^10.0.0",
@@ -67,8 +67,7 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "uuid": "^9.0.0"
+    "react-dom": "^18.0.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
