@@ -4,7 +4,7 @@ import type { AppContextState } from './types';
 
 /**
  * casting the default value to AppContextState
- * We're gonna assume that the context is always set with the required values
+ * We're gonna assume the context is always set with the required values
  */
 export const AppContext = createContext<AppContextState>({} as AppContextState);
 
