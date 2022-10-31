@@ -1,8 +1,8 @@
-import { FCWithChildren } from '~/src/app/types';
+import { FCWithChildren } from "~/src/app/types";
 
 export const Header: FCWithChildren = ({ children }) => (
   <header>
-    <h1 className="text-3xl p-2">{children}</h1>
-    <hr className="border mb-4" />
+    <h1 className="p-2 text-3xl">{children}</h1>
+    <hr className="mb-4 border" />
   </header>
 );
