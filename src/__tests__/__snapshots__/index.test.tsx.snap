@@ -4,12 +4,12 @@ exports[`App matches snapshot 1`] = `
 <DocumentFragment>
   <header>
     <h1
-      class="text-3xl p-2"
+      class="p-2 text-3xl"
     >
       React Seed
     </h1>
     <hr
-      class="border mb-4"
+      class="mb-4 border"
     />
   </header>
   <main
