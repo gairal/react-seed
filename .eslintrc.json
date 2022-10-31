@@ -3,7 +3,13 @@
     "airbnb-typescript-prettier",
     "plugin:typescript-sort-keys/recommended"
   ],
-  "plugins": ["import", "no-only-tests", "react-hooks", "typescript-sort-keys"],
+  "plugins": [
+    "import",
+    "no-only-tests",
+    "react-hooks",
+    "typescript-sort-keys",
+    "unused-imports"
+  ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/naming-convention": [
@@ -13,9 +19,11 @@
       { "selector": "typeLike", "format": ["PascalCase"] }
     ],
     "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-ts-expect-error": "error",
+    "@typescript-eslint/no-unused-vars": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -60,7 +68,9 @@
     "react/jsx-key": "error",
     "react/jsx-props-no-spreading": "warn",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-sort-props": ["error", { "reservedFirst": true }]
+    "react/jsx-sort-props": ["error", { "reservedFirst": true }],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": "error"
   },
   "settings": { "import/resolver": { "typescript": {} } }
 }
