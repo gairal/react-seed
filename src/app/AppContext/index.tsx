@@ -1,6 +1,6 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from "react";
 
-import type { AppContextState } from './types';
+import type { AppContextState } from "./types";
 
 /**
  * casting the default value to AppContextState

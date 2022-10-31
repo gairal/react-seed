@@ -1,6 +1,6 @@
-import { useAppContext } from '../AppContext';
+import { useAppContext } from "../AppContext";
 
-import './style.scss';
+import "./style.scss";
 
 export const Main = () => {
   const { content } = useAppContext();

@@ -33,11 +33,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "postcss.config.js",
-          "vite.config.ts",
-          "**/__tests__/*"
-        ]
+        "devDependencies": ["vite.config.ts", "**/__tests__/*"]
       }
     ],
     "import/no-unresolved": [

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import type { AppContextState } from './types';
+import type { AppContextState } from "./types";
 
 export const useInitAppContext = (): AppContextState => {
-  const [content] = useState('context test');
+  const [content] = useState("context test");
 
   return { content };
 };
