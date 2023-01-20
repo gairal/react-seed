@@ -33,17 +33,17 @@ git clone git@github.com:gairal/react-seed.git
 cd react-seed
 
 # install the dependencies
-yarn
+pnpm i
 
 # start the TypeScript watcher
-yarn start
+pnpm start
 ```
 
 ### Commands
 
-- `yarn run build`: Production build generated into ./dist
-- `yarn run clean`: Deletes build dir ./dist
-- `yarn run dev`: launches a TypeScript watcher
-- `yarn run lint`: lints the whole sources and tests with eslint
-- `yarn test`: runs Jest
-- `yarn start`: runs the project in production mode
+- `pnpm build`: Production build generated into ./dist
+- `pnpm clean`: Deletes build dir ./dist
+- `pnpm dev`: launches a TypeScript watcher
+- `pnpm lint`: lints the whole sources and tests with eslint
+- `pnpm test`: runs Jest
+- `pnpm start`: runs the project in production mode

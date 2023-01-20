@@ -68,5 +68,13 @@
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": "error"
   },
+  "overrides": [
+    {
+      "files": ["./*.js"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
+  ],
   "settings": { "import/resolver": { "typescript": {} } }
 }

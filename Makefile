@@ -1,15 +1,15 @@
 .PHONY: install test build release start debug deploy
 
 install:
-	yarn
+	pnpm i
 
 test:
-	yarn run lint
-	yarn run test
+	pnpm lint
+	pnpm test
 
 build:
 	make install
-	yarn run build
+	pnpm build
 
 start:
-	yarn start
+	pnpm start
